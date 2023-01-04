@@ -1,0 +1,166 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/data-band/data-band",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		},{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "信息页",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#3d2fff",
+				"h5": {
+					"pullToRefresh": {
+						"color": "yellow"
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/contact/contact",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "绿帽",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/uni-style/uni-style",
+			"style": {
+				"navigationBarTitleText": "style",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "下拉刷新事件",
+                "enablePullDownRefresh": true,
+				"onReachBottomDistance": 200 //页面触底的距离
+            }
+            
+        }
+        ,{
+            "path" : "pages/navigator/navigator",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/video/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/data-checkbox/data-checkbox",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": { //全局样式配置
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "绿帽子",
+		"navigationBarBackgroundColor": "#7FFF00",
+		"backgroundColor": "#7CCD7C",
+		"enablePullDownRefresh": true, //开启下拉刷新
+		"backgroundTextStyle": "light" //下拉刷新样式，只能是dark或light
+	},
+	"tabBar": {
+		"backgroundColor": "#f8f8f8",
+		"color": "#000000",
+		"selectedColor": "#A0522D",
+		"borderStyle": "white",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/data-band/data-band",
+				"iconPath": "static/tabs/home.png",
+				"selectedIconPath": "static/tabs/home-active.png"
+			},
+			{
+				"text": "信息",
+				"pagePath": "pages/list/list",
+				"iconPath": "static/tabs/message.png",
+				"selectedIconPath": "static/tabs/message-active.png"
+			},
+			{
+				"text": "媒体",
+				"pagePath": "pages/message/message",
+				"iconPath": "static/tabs/message.png",
+				"selectedIconPath": "static/tabs/message-active.png"
+			},
+			{
+				"text": "我们",
+				"pagePath": "pages/detail/detail",
+				"iconPath": "static/tabs/contact.png",
+				"selectedIconPath": "static/tabs/contact-active.png"
+			},{
+				"text": "导航",
+				"pagePath": "pages/navigator/navigator",
+				"iconPath": "static/tabs/contact.png",
+				"selectedIconPath": "static/tabs/contact-active.png"
+			}
+		]
+	},
+	"condition": { //配置启动模式
+		"current": 0, //当前激活的模式，list的索引值
+		"list": [{
+				"name": "详情页",
+				"path": "pages/detail/detail",
+				"query": "id=80"
+			},
+			{
+				"name": "样式学习页",
+				"path": "pages/uni-style/uni-style"
+			},
+			{
+				"name": "数据绑定学习页",
+				"path": "pages/data-band/data-band"
+			},
+			{
+				"name": "下拉刷新",
+				"path": "pages/list/list" 
+			},
+			{
+				"name": "测试上传图片",
+				"path": "pages/message/message"
+			},
+			{
+				"name": "导航跳转的学习",
+				"path": "pages/navigator/navigator"
+			},
+			{
+				"name": "组件学习",
+				"path": "pages/index/index"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

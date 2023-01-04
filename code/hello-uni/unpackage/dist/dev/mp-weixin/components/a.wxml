@@ -1,0 +1,1 @@
+<view>这是a组件：<button data-event-opts="{{[['tap',[['addNum',['$event']]]]]}}" bindtap="__e">修改b组件的数据</button></view>

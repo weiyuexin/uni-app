@@ -1,0 +1,1 @@
+<view><button type="primary" data-event-opts="{{[['tap',[['chooseImg',['$event']]]]]}}" bindtap="__e">上传图片</button><block wx:for="{{imgArr}}" wx:for-item="item" wx:for-index="__i0__"><image src="{{item}}" data-event-opts="{{[['tap',[['previewImg',['$0'],[[['imgArr','',__i0__]]]]]]]}}" bindtap="__e"></image></block><view>我希望只在微信小程序页面中看见</view></view>

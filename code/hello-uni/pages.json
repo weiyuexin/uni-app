@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/navigator/navogator"
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText":"信息页",
+				"navigationBarBackgroundColor": "#007AFF",
+				"h5":{
+					"pullToRefresh":{
+						"color": "#7D26CD"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style":{
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 200
+			}
+		},
+		{
+			"path":"pages/home/home"
+		},
+		{  
+			"path":"pages/uni-style/uni-style"
+		},
+		{
+			"path": "pages/contact/contact"
+		},
+		{
+			"path": "pages/detail/detail"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "绿帽子",
+		"navigationBarBackgroundColor": "#7FFF00",
+		"backgroundColor": "#7CCD7C",
+		"backgroundTextStyle": "light"
+	},
+	"tabBar": {
+		"color": "#A0522D",
+		"selectedColor": "#B3EE3A",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"position": "top",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabs/home.png",
+				"selectedIconPath":"static/tabs/home-active.png"
+			},
+			{
+				"text": "信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tabs/message.png",
+				"selectedIconPath":"static/tabs/message-active.png"
+			},
+			{
+				"text": "我们",
+				"pagePath":"pages/contact/contact",
+				"iconPath":"static/tabs/contact.png",
+				"selectedIconPath":"static/tabs/contact-active.png"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name": "字体图标使用",
+				"path": "pages/uni-style/uni-style"
+			}
+		]
+	}
+}
